@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="E:\Dev\HTML\わんころメソッド();\style.css">
+    <title>わんころメソッド();</title>
+    <script src="E:\Dev\HTML\わんころメソッド();\js\jquery.js"></script>
+    <script>
+    //load animetion
+     $(function() {
+      var h = $(window).height();
+      $('#contents').css('display','none');
+      $('#loader').height(h).css('display','block');
+      $('body').css('background-color','#fff');
+     });
+
+     $(function(){
+      setTimeout('stopload()',2200);
+     });
+
+     function stopload(){
+      $('#loader').fadeOut();
+      $('#contents').delay(500).fadeIn();
+      $('body').css('background-color','#ffdead');
+     }
+    </script>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div id="loading">
+        <img src="E:\Dev\HTML\わんころメソッド();\img\load_low.gif">
+      </div>
+    </div>
+
+    <div id="contents">
+      <div class="header">
+        <div class="logo">
+          <a href="http://mayu-cs.xyz/wankoro.html"><img src="E:\Dev\HTML\わんころメソッド();\img\logo.png"></a>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="E:\Dev\HTML\わんころメソッド();\img\icon.png">
+      </div>
+      <div class="sns">
+        <a href="https://twitter.com/mayu___cs"><img src="E:\Dev\HTML\わんころメソッド();\img\Twitter.png"></a>
+        <a href="https://fantia.jp/mayu___cs"><img src="E:\Dev\HTML\わんころメソッド();\img\fantia.png"></a>
+        <a href="https://www.pixiv.net/users/30276170"><img src="E:\Dev\HTML\わんころメソッド();\img\pixiv-logo.png"></a>
+        <a href="https://github.com/mayu-cs"><img src="E:\Dev\HTML\わんころメソッド();\img\Github.png"></a>
+      </div>
+      <div class="wankoro">
+        <h1>わんころメソッド();とは</h1>
+        <h4>キモオタプログラマー、まゆC#の個人サークル</h4>
+        <h4>2020年活動開始以降、イラストを描いたりソフトを開発したりしている。</h4>
+        <h4>尚お絵描きは趣味であり専門分野はIT</h4>
+        <h4>サークル活動以前には嫁が欲しいという理由で音声認識型3DキャラクターAIを開発した。</h4>
+        <a href="https://discordapp.com/invite/TZVTBkk"><h4>せっかくならまゆC#のDiscordサーバー入ってみませんか?</h4></a>
+        <div class="Twitter">
+          <a class="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/mayu___cs?ref_src=twsrc%5Etfw">Tweets by mayu___cs</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+      <footer>
+        <p class="copyright">&#169; 2020 わんころメソッド();</p>
+      </footer>
+    </div>
+  </body>
+</html>

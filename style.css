@@ -1,0 +1,53 @@
+#loading {
+	position: fixed;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+body{
+	background-color: #ffdead;
+	margin:0;
+  padding: 0;
+}
+.logo{
+	padding: 5px;
+}
+.profile{
+  text-align: center;
+}
+.profile img{
+  border-radius: 50%;
+  width:  25%;
+  height: 25%;
+}
+.sns{
+	text-align: center;
+}
+.sns img{
+	width: 10%;
+	height: 10%;
+}
+.wankoro{
+	margin-top: 200px;
+	text-align: center;
+}
+.Twitter{
+	margin-top: 100px;
+}
+footer{
+	width:100%;
+  height: 30px;
+	background-color: #ff792b;
+	text-align: center;
+}
+.copyright{
+	text-align: center;
+}
+.wankoro a{ text-decoration: none; }
+.wankoro a:link{ color: #ff792b; transition: 1s;}
+.wankoro a:visited{ color: #ff792b; }
+.wankoro a:hover{ color:white; background-color: #ff792b; }
+.wankoro a:active{ color:white; background-color:transition; }
